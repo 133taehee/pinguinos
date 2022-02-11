@@ -1,0 +1,26 @@
+---
+title: "index"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+This site contains data for penguins in the Palmer Archipelago and analysis of said data.
+
+## Data
+
+Includes measurements for penguin species, island in Palmer Archipelago, size (flipper length, body mass, bill dimensions), and sex. This is a subset of `penguins_raw`.
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png){width=40%}
+```{r datasetview}
+penguins
+```
+
+
+
+
+

@@ -1,0 +1,21 @@
+---
+title: "singletrait"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Single trait distribution
+
+```{r specmassdist, echo=FALSE} 
+# Histogram of mass distribution by species
+ggplot(data=penguins, mapping=aes(body_mass_g)) +
+  geom_histogram(binwidth=100)+
+  facet_grid(cols=vars(species))+
+  labs(x="Body Mass (g)", y="Frequency")
+```

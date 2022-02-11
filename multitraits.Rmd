@@ -1,0 +1,20 @@
+---
+title: "multitraits"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Relationship between multiple traits
+
+```{r bill}
+# Relationship between bill length and body mass for species
+
+ggplot(data=penguins)+
+  geom_point(mapping=aes(body_mass_g, bill_length_mm, color=species))+
+  labs(x="Body Mass (g)", y="Bill Length (mm)")
+```

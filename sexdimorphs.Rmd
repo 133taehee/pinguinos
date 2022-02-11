@@ -1,0 +1,22 @@
+---
+title: "sexdimorphs"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Sexual dimorphism
+
+```{r sexdim}
+# Sexual dimorphisms
+
+ggplot(data=na.omit(penguins))+
+  geom_density(mapping=aes(body_mass_g, fill=sex), position="identity", alpha=0.3)+
+  facet_grid(cols=vars(species))+
+  labs(x="Body Mass (g)", y="Density")
+
+```
