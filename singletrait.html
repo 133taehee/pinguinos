@@ -357,6 +357,11 @@ div.tocify {
 
 <div id="single-trait-distribution" class="section level2">
 <h2>Single trait distribution</h2>
+<pre class="r"><code># Histogram of mass distribution by species
+ggplot(data=penguins, mapping=aes(body_mass_g)) +
+  geom_histogram(binwidth=100)+
+  facet_grid(cols=vars(species))+
+  labs(x=&quot;Body Mass (g)&quot;, y=&quot;Frequency&quot;)</code></pre>
 <p><img src="singletrait_files/figure-html/specmassdist-1.png" width="672" /></p>
 </div>
 
