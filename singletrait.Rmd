@@ -1,5 +1,5 @@
 ---
-title: "singletrait"
+title: "Single Trait Analysis"
 output: html_document
 ---
 

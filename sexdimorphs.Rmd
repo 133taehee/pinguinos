@@ -1,5 +1,5 @@
 ---
-title: "sexdimorphs"
+title: "Sexual Dimorphisms"
 output: html_document
 ---
 
